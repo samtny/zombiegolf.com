@@ -9,8 +9,8 @@
         
         strings.welcome = [
             'Welcome to Zombie Golf.', '', '', '', '',
-            '<br />It seems like a good day for golf','.','.','.','',
-            '<br />...not to mention Zombies.'
+            '\nIt seems like a good day for golf','.','.','.','','',
+            '\n    ...not to mention Zombies.'
         ];
         
     }

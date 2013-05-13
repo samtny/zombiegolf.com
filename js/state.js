@@ -7,13 +7,13 @@
     $.state = function(options) {
         
         var defaults = {
-            started:    false
+            visited:    false
         }
         
         var state = this;
         
         state.settings = {};
-        state.started = false;
+        state.visited = false;
         
         var init = function() {
             state.settings = $.extend({}, defaults, options);
