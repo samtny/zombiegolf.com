@@ -4,9 +4,8 @@
 
 var main = {
     onload : function() {
-        if (state.visited === false) {
+        if (state.roundsStarted === 0) {
             out.say(strings.welcome, 1, function(){$('.start').show()});
-            state.visited = true;
         }
     }
 }

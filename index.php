@@ -9,12 +9,26 @@
         <script src="js/strings.js"></script>
         <script src="js/timer.js"></script>
         <script src="js/out.js"></script>
+        <script src="js/courses.js"></script>
+        <script src="js/round.js"></script>
         <script src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>
-        <pre class="out"></pre>
         <section>
-            <button class="start" style="display: none" onClick="begin()">Begin</button>
+            <pre class="out"></pre>
+        </section>
+        <section class="nocourse">
+            <button class="start" style="display: none" onClick="courses.showAvailable()">Begin</button>
+            <ul>
+                <li class="greenerPastures" style="display: none">
+                    <button onClick="round.start(courses.greenerPastures)">Greener Pastures</button>
+                </li>
+            </ul>
+        </section>
+        <section class="course" style="display: none">
+            Current Course: <span class="title"></span>
         </section>
     </body>
 </html>
